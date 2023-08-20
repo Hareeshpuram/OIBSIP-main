@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iris Flower Classification</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color:#98d8eb;
+            margin: 0;
+            padding: 0;
+        }
+
+        #container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            color: rgb(255, 0, 174);
+            border: radius 10px;
+            border-color: aquamarine;
+        }
+
+        h2 {
+            color: #007BFF;
+        }
+
+        h3 {
+            color: #ff4747;
+            border: #ccc;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"], button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #prediction {
+            font-weight: bold;
+        }
+        
+        body{
+            background-image:url("R1.jpg");
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body >
+    
+    <div id="container">
+        <div style="background-color:rgb(214, 220, 107);"><br>
+        <h1 style="text-align: center;"><b>Iris Flower Classification</b></h1>
+        </div>
+        <form action="{{url_for('predict')}}" method="post">
+            <h2>Enter Flower Dimensions</h2>
+            <h3>Sepal Length:</h3> <input type="text" name="sl">
+            <h3>Sepal Width:</h3> <input type="text" name="sw">
+            <h3>Petal Length:</h3> <input type="text" name="pl">
+            <h3>Petal Width:</h3> <input type="text" name="pw">
+            <button type="submit">Predict</button>
+        </form>
+        <div id="prediction">
+            {% if prediction %}
+                <h2>{{ prediction }}</h2>
+            {% endif %}
+        </div>
+    </div>
+</body>
+</html>
