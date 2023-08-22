@@ -1,0 +1,60 @@
+car_ID: An identifier for each car in the dataset.
+symboling: Represents the risk rating of the car based on its insurance risk. It can be an integer or categorical value.
+CarName: The name or model of the car.
+fueltype: Indicates the type of fuel used by the car, such as "gas" or "diesel".
+aspiration: Indicates whether the car has a turbocharged engine or not, typically represented as "std" (standard) or "turbo".
+doornumber: Represents the number of doors the car has, often expressed as "two" or "four".
+carbody: Describes the body type of the car, such as "sedan", "hatchback", "wagon", etc.
+drivewheel: Indicates the type of drivetrain of the car, such as "4wd" (four-wheel drive), "fwd" (front-wheel drive), or "rwd" (rear-wheel drive).
+enginelocation: Specifies the location of the car's engine, typically "front" or "rear".
+wheelbase: The distance between the centers of the front and rear wheels of the car.
+carlength: The length of the car.
+carwidth: The width of the car.
+carheight: The height of the car.
+curbweight: The weight of the car without occupants or baggage.
+enginetype: Describes the type of engine, such as "ohc" (overhead camshaft), "ohcf" (overhead camshaft and camshaft), etc.
+cylindernumber: Indicates the number of cylinders in the car's engine, often expressed as a numerical value or a categorical value like "four" or "six".
+enginesize: The size of the car's engine in cubic centimeters (cc).
+fuelsystem: Describes the fuel delivery system used in the car, such as "mpfi" (multi-point fuel injection), "2bbl" (two-barrel carburetor), etc.
+boreratio: The ratio of the cylinder bore diameter to the piston stroke length.
+stroke: The length of the piston stroke in the engine.
+compressionratio: Represents the compression ratio of the car's engine.
+horsepower: The horsepower rating of the car's engine.
+peakrpm: The peak revolutions per minute (RPM) of the car's engine.
+citympg: The fuel efficiency in miles per gallon (MPG) during city driving.
+highwaympg: The fuel efficiency in miles per gallon (MPG) during highway driving.
+price: The price of the car.
+These columns contain various features or attributes of cars that can be used for prediction or analysis tasks. Let me know if there's anything specific you would like to do with this dataset, such as prediction, exploration, or any specific questions you have about the data.
+
+enginetype:
+DOHC (Dual Overhead Camshaft): This engine configuration has two camshafts per cylinder head, one controlling the intake valves and the other controlling the exhaust valves. DOHC engines often offer improved performance and higher RPM capabilities compared to other designs.
+
+OHV (Overhead Valve): Also known as pushrod engines, OHV engines have the valves located in the engine block, but the camshaft is placed in the cylinder block. The camshaft operates the valves through pushrods and rocker arms. OHV engines are typically more compact and have a simpler design.
+
+OHC (Overhead Camshaft): In this design, the camshaft(s) is located in the cylinder head(s) above the combustion chamber. OHC engines eliminate the need for pushrods and use timing belts or chains to operate the valves directly. This configuration allows for improved engine breathing and higher RPMs.
+
+L (Wankel Rotary Engine): The rotary engine, also known as the Wankel engine, uses a unique triangular rotor to convert pressure into rotational motion. Instead of pistons moving up and down, the rotor rotates within a housing, creating combustion chambers and generating power. Rotary engines are known for their high-revving nature and compact size.
+
+Rotor: The term "rotor" refers to the rotating component in a Wankel rotary engine. The rotor replaces the pistons found in conventional reciprocating engines and performs the functions of intake, compression, combustion, and exhaust.
+
+OHCF (Overhead Camshaft Fuel Cell): It seems that "OHCF" may be an incorrect or less common engine type designation. It does not correspond to a widely known or recognized engine configuration.
+
+DOHCV (Dual Overhead Camshaft with Variable Valve Timing): This type combines the DOHC configuration with variable valve timing (VVT) technology. VVT allows for the adjustment of valve timing, improving engine performance and efficiency across a range of operating conditions.
+
+
+fuel system:
+MPFI (Multi-Point Fuel Injection): MPFI is a fuel injection system that injects fuel into each cylinder individually, near the intake valve. It uses multiple fuel injectors to deliver the appropriate amount of fuel to each cylinder, providing precise fuel control and better engine performance.
+
+2BBL (Two-Barrel Carburetor): 2BBL refers to a two-barrel carburetor, which is a fuel delivery system that uses a carburetor with two primary fuel barrels. Each barrel supplies fuel to a set of cylinders. It is a simpler system compared to fuel injection and is commonly found in older vehicles.
+
+MFI (Multi-Point Fuel Injection): MFI is similar to MPFI, as it also injects fuel into each cylinder individually. However, the term MFI is less commonly used compared to MPFI.
+
+1BBL (One-Barrel Carburetor): 1BBL refers to a one-barrel carburetor, which has a single fuel barrel supplying fuel to all the cylinders. It is a basic carburetor design and is commonly found in older, less complex engines.
+
+SPFI (Single-Point Fuel Injection): SPFI is a fuel injection system that injects fuel through a single injector located at the throttle body or intake manifold. It delivers fuel to all cylinders simultaneously, rather than individually like MPFI.
+
+4BBL (Four-Barrel Carburetor): 4BBL refers to a four-barrel carburetor, which has four primary fuel barrels supplying fuel to the engine's cylinders. It is typically found in performance-oriented or high-displacement engines.
+
+IDI (Indirect Injection): IDI is a type of diesel fuel injection system where fuel is injected into a pre-combustion chamber or an auxiliary chamber. The air-fuel mixture is then drawn into the main combustion chamber for combustion.
+
+SPDI (Sequential Port Direct Injection): SPDI is a fuel injection system that injects fuel directly into each cylinder's intake port. It combines the benefits of direct fuel injection and sequential fuel injection, providing precise fuel delivery and improved engine performance.
